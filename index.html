@@ -7,17 +7,17 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
   <link rel="stylesheet" type="text/css" href="css/home.css">
-
+  
 </head>
-<body id="body">
+<body id="body" class="background">
   <nav class="navbar-a navbar-fixed-top" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);" >
     <div class="container-fluid">
-      <div class="navbar-header" >
+      <div class="navbar-header"  style="background-color: #616161">
         <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="glyphicon glyphicon-list" style="font-size: 20px"></span>
           
         </button>
-        <a href="index.html" ><p class="navbar-brand nav-tool" style="background-color: #FF9966;">Skyworth Club</p></a>
+        <a href="index.html" ><p class="navbar-brand nav-tool" style="font-size:21px;height: 40px;">Skyworth Club</p></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -28,7 +28,7 @@
     </div>
     </div>
   </nav>
-  <div id="myCarousel"  class="carousel slide" data-ride="carousel">
+  <div id="myCarousel"  class="carousel slide col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" data-ride="carousel">
     <!--第一步：设计轮播图片的容器。-->
     <!--            #slidershow 层添加 slide 样式，使用图片与图片切换效果有平滑感-->
     <ol class="carousel-indicators">
@@ -37,57 +37,103 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
-
-    <div class="carousel-inner" role="listbox" style="height: 50%;width: 100%">
-      <!--第三步：设计轮播图片播放区,使用 carousel-inner 样式来控制-->
-      <div class="item active">
-        <img src="img/6.jpg" alt="" style="width: 100%">
+    <div class="" style="margin-top: 60px;">
+      <div class="carousel-inner"style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)"; role="listbox">
+        <!--第三步：设计轮播图片播放区,使用 carousel-inner 样式来控制-->
+        <div class="item active">
+          <img src="img/1-1.png" alt="" style="width: 100%;">
+        </div>
+        <div class="item">
+          <img src="img/1-2.jpg" alt="" style="width: 100%">
+        </div>
+        <div class="item">
+          <img src="img/1-3.jpg" alt="" style="width: 100%">
+        </div>      
       </div>
-      <div class="item">
-        <img src="img/7.jpg" alt="" style="width: 100%">
-      </div>
-      <div class="item">
-        <img src="img/8.jpg" alt="" style="width: 100%">
-      </div>      
-    </div>    
-  </div>
-  <div id="video-box">
-    <div id="inner-text" class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
-      <h1 style="color:#6CBB70">A title</h1>
-      <p style="opacity: 0.7">&nbsp;&nbsp;sometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsomesometextsometextsometextsometextsometextsomet</p>
-    </div>
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
   
-    <div id="video"class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
-      <video id="video1" controls style="width: 400px;height: 270px;" >
-        <source src="video/Skyworth.mp4" type="video/ogg" >
-        Your browser does not support HTML5 video.
-      </video>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>  
+    </div>  
+  </div>
+  <div id="video-box" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    <div class="video-title">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2>Introdction</h2>
+      </div>
+    </div>
+    <div id="video">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <video controls style="width: 100%">
+          <source src="video/Skyworth.mp4" type="video/ogg">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </div>
+    <div  class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="inner-text">
+        <p>俱乐部天生有着互联网开放基因，整个氛围是相当活泼的，我们绝不是严肃的技术宅，大家都是抱着对技术感兴趣，以及不想虚度大学的想法走到了一起，一路奋斗，一起成长。</p>
+      </div>
     </div>
   </div>
-  <div id="img-box">
-    <div id="img" class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
-      <img src="img/10.jpg" class="img-responsive img-1" style="width: 400px;height: 270px">
+  <div  id="honor"class="img-box col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    <div class="img">
+      <div class="col-xs-12 col-sm-12 col- col-md-12 col-lg-12"><h1 style="color: #F5665D">荣誉</h1></div>
+        <div class=" col-sm-5 col-md-5 col-lg-5 text1">
+          <p>这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述</p>
+        </div>  
+        <div  class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+          <img src="img/ho1.jpg" class="img-1" style="width:100%">
+        </div>
     </div>
-    <div id="inner-text1" class="col-xs-12 col-sm-6 col-md-7 col-lg-7" >
-      <h1 style="color: #F5665D">A title</h1>
-      <p style="opacity: 0.7">&nbsp;&nbsp;sometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometeometextsometextsometextsometextsometextsometextsometextsometextsomet</p>
+      <div class="img">
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 text1">
+          <p>这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述</p>
+        </div>  
+        <div  class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+          <img src="img/ho2.png" class="img-1" style="width:100%">
+        </div>
     </div>
   </div>
-  <div id="img-box1">
-    <div id="inner-text2" class="col-xs-12 col-srm-6 col-md-7 col-lg-7" >
-      <h1 style="color:#50A8F5">A title</h1>
-      <p style="opacity: 0.7">&nbsp;&nbsp;sometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometetsometextsometextsometextsometextsometextsometextsometextsometextsomet</p>
+  <div  id="history"class="img-gal col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><h1 style="color: #50A8F5">历史</h1></div>
+    
+    <div id="h-1" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      
+        <img src="img/h1.png" class="img-2" style="width:100% ">
+      
+      
+        <h1>俱乐部成立</h1>
+        <p>2014年5月24日，华工创维大学生创新俱乐部正式诞生。这是一个由创维集团直接提供资金赞助和技术支持的，由华工在校学生组成的学生组织。我们拥有最优越的科研设备，拥有最舒适的实验环境。我们创新地将互联网企业的项目管理与开发流程引入到学生项目开发中，让参与项目的会员不但能提高自身的技术能力，还能提前感受企业的开发氛围，为以后的职业发展提前奠定基础！
+        </p>
+      
     </div>
-    <div id="img1" class="col-xs-12 col-sm-6 col-md-4 col-lg-4" style="width: 400px;height: 270px ;padding-top: 100px;">
-      <img src="img/logo.png" id="logo" class="img-responsive img-1" style="height: 270px; ">
+    <div id="h-2" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      
+        <img src="img/h2.png" class="img-2" width="100%">
+      
+      
+        <h1>寒假集训</h1>
+        <p>寒假集训活动为期13天（其中包括两天休息日），活动期间参考创维软件研究院的工作时间，采用敏捷开发的开发模式开展互联网产品开发项目。集训的各位在俱乐部工作室度过充实而愉快的半个月！为了让大家学习到最真实最实用的敏捷开发方法，我们特地请来了创维酷开技术总监吴广生老师以他的多年工作经验给我们讲述敏捷开发流程。
+		    </p>
+      
+    </div>
+    <div id="h-3" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      
+        <img src="img/h3.jpg" class="img-2" width="100%">
+      
+      
+        <h1>暑期实习</h1>
+        <p>七月二十号，我们华南理工大学的13位小伙伴们一起包车，来到了深圳创维集团。竹子姐姐站在同济楼前迎接我们，先带了我们去了宿舍，然后带我们来到了软件研究院，搭建工作环境。
+		就这样，我们为期一个月的实习，就正式拉开了序幕。</p>
+      
     </div>
   </div>
+  
   <div id="footer">
   	<p>加入我们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q&A<span id="myPage" data-toggle="tooltip" title="返回顶端" class="glyphicon glyphicon-chevron-up"></span></br>copyright@Skyworth Club</p>
 	
   </div>
-  
-
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -95,71 +141,91 @@
  $(document).ready(function(){
  	$('[data-toggle="tooltip"]').tooltip();
  	$("#myPage").click(function(){
- 		$("html").animate({scrollTop:0},1000);
+ 		$("html").animate({scrollTop:$("body").offset().top || document.body.scrollTop },1000);
  	})
   
-  $("button").click(function(){
-            if ($(".navbar-a").css("max-height")=="50px") {
-              $(".navbar-a").css("max-height","70px")
-            }
-            else{
-               $(".navbar-a").css("max-height","50px")
-            } 
-        })
-	$(window).scroll(function(){
-		if($(window).width()<770){
-			$("video-box").removeClass();
-			$("#video-box").animate({height:"850", padding:0 },0);
-			$("#inner-text,#inner-text1,#inner-text2").attr("class","mobile-text");
-			$("#inner-text").css("left","0px")
-			$("#video").css("left",($(window).width()-500)/2+"px")
-			$("#video1").animate({width:"500px"},0);
-			$("#img-box").animate({height:"900px", padding:0 },0);
-			$("#inner-text1").css("left","0px")
-			$("#img").css("padding-left","100px")
-			$("#img").css("padding-bottom","50px")
-			$(".img-1").animate({width:"450px",height:"auto"},0);
-			$("#inner-text2").css("left","0px")
-			$("#inner-text2").css("height","550px")
-			$("#img-box1").animate({height:"900px", padding:0 },0);
-			$("#img1").css("padding-left","150px")
-			$("#logo").animate({height:"235px" },0);
-			$("#footer >p >#myPage").css("left","100px")
+  if($("#h-1").css("height")>$("#h-2").css("height")&&$("#h-1").css("height")>$("#h-3").css("height")){
+    $("#h-2").css("height",$("#h-1").css("height"))
+    $("#h-3").css("height",$("#h-1").css("height"))
+  }else if($("#h-2").css("height")>$("#h-1").css("height")&&$("#h-2").css("height")>$("#h-3").css("height")){
+    $("#h-1").css("height",$("#h-2").css("height"))
+    $("#h-3").css("height",$("#h-2").css("height"))
+  }else{
+    $("#h-1").css("height",$("#h-3").css("height"))
+    $("#h-2").css("height",$("#h-3").css("height"))
+  }
+  $("#h1").click(function(){
+    $("html").animate({scrollTop:$("#honor").offset().top},500);
+  })
+  $("#h2").click(function(){
+    $("html").animate({scrollTop:$("#history").offset().top},500);
+  })
+  
+   if($(window).width()<768){
+      $("#h-1").css("height","auto")
+      $("#h-2").css("height","auto")
+      $("#h-3").css("height","auto")
+      $(".text1").css("padding-top","30px")
+      
+      $(".navbar-right").css("margin-right","-15px")
+    }
+    else if($(window).width()>1270){
+     
+      
+      $(".navbar-right").css("margin-right","4%")
+    }
+    else{
+      
+      $(".text1").css("padding-top","0px")
+      
+      $(".navbar-right").css("margin-right","4%")
+    }
+  $(window).resize(function(){
+    if($("#h-1").css("height")>$("#h-2").css("height")&&$("#h-1").css("height")>$("#h-3").css("height")){
+      $("#h-2").css("height",$("#h-1").css("height"))
+      $("#h-3").css("height",$("#h-1").css("height"))
+    }else if($("#h-2").css("height")>$("#h-1").css("height")&&$("#h-2").css("height")>$("#h-3").css("height")){
+      $("#h-1").css("height",$("#h-2").css("height"))
+      $("#h-3").css("height",$("#h-2").css("height"))
+    }else{
+      $("#h-1").css("height",$("#h-3").css("height"))
+      $("#h-2").css("height",$("#h-3").css("height"))
+    }
+  $("#h1").click(function(){
+    $("html").animate({scrollTop:$("#honor").offset().top},500);
+  })
+  $("#h2").click(function(){
+    $("html").animate({scrollTop:$("#history").offset().top},500);
+  })
+  
+    if($(window).width()<768){
+      $("#h-1").css("height","auto")
+      $("#h-2").css("height","auto")
+      $("#h-3").css("height","auto")
+      $(".text1").css("padding-top","30px")
+      
+      $(".navbar-right").css("margin-right","-15px")
+    }
+    else if($(window).width()>1270){
+      
+      $(".navbar-right").css("margin-right","4%")
+    }
+    else{
+     
+      $(".text1").css("padding-top","0px")
+      
+      $(".navbar-right").css("margin-right","4%")
+    }
+  })
 
-		}
-		if($(window).width()>770){
-			if($(window).scrollTop()<=200){
-				$("#inner-text").stop().animate({opacity:"0.3",left:"-1000px"},500);
-			}
-			else{
-				$("#inner-text").stop().animate({opacity:"1",left:"100px"},1500);
-				$("#inner-text p").css("opacity","0.7")
-			}
-			if($(window).scrollTop()<=600){
-				$("#inner-text1").stop().animate({opacity:"0.3",right:"-1000px"},500);
-			}
-			else{
-				$("#inner-text1").stop().animate({opacity:"1",right:"0"},1500);
-				$("#inner-text1 p").css("opacity","0.7")
-			}
-			if($(window).scrollTop()<=1000){
-				$("#inner-text2").stop().animate({opacity:"0.3",left:"-1000px"},500);
-			}
-			else{
-				$("#inner-text2").stop().animate({opacity:"1",left:"0"},1500);
-				$("#inner-text2 p").css("opacity","0.7")
-			}
-		}
-	})
 	$(".nav-tool").bind("mouseover",function(){
 		$(this).css("color","white")
 		$(this).css("opacity","0.5")
 	}).bind("mouseout",function(){
-		
 		$(this).css("opacity",1)
       })
     })
-    
+
   </script>
 </body>
 </html>

@@ -8,9 +8,9 @@
 	z-index: -1;
 }
 .box{
-	padding-top: 50px;
+	padding-top: 60px;
 	width: 100%;
-	height: 1000px;
+	height: 500px;
 	color: black;
 }
 .box li{
@@ -18,11 +18,13 @@
 }
 
 #logo{
-	width: 300px;
-	
+	margin-left: -20px;
+	width: 200px;
+	margin-bottom: 15px;
 }
-.box >.col-md-2 #logo >img{
+.box .col-md-2 #logo >img{
  	width: 80px;
+ 	height: 80px;
 }
 
 
@@ -36,36 +38,39 @@
 
 .nav-stacked >li:hover{
   background-color: #FBE9E7;
+  color: #FF561C;
   
 }
 .nav-stacked >li >a:hover{
   background-color: #FBE9E7;
-  
+  color: #FF561C;
 }
 .navbar-nav >li > a:hover{
   background-color: #FF561C;
   
 }
-.nav-tabs >li >a{
+.nav-sidebar >li >a{
 	opacity: 0.7;
 	color: black;
+	font-size: 18px;
+	padding: 15px 0 15px 22px;
 }
-.nav-tabs >li.active >a{
+.nav-sidebar >li.active >a{
 	background-color: #FBE9E7;
-	color: black;
 	border: 0;
+	color: #FF561C;
 }
-.nav-tabs >li.active{
+.nav-sidebar >li.active{
 	background-color: #FBE9E7;
-	color: black;
+	color: #FF561C;
 	
 }
-.nav-tabs >li.active >a:hover, .nav-tabs >li.active >a:focus{
+.nav-sidebar >li.active >a:hover, .nav-sidebar >li.active >a:focus{
 	background-color: #FBE9E7;
-	color: black;
+	color: #FF561C;
 	border: 0;
 }
-.nav-tabs >li.active:hover, .nav-tabs >li.active:focus{
+.nav-sidebar >li.active:hover, .nav-sidebar >li.active:focus{
 	background-color: #FBE9E7;
 	color: black;
 }
@@ -95,13 +100,30 @@
 	padding-top: 30px;
 	height: 400px;
 	color: black;
-
-}
-#sidebar{
-	border-right: 1px solid #e1e1e1;
-	height: 500px;
+	line-height: 32px;
+	font-size: 20px;
 }
 
-#sidebar ul li {
-	border-top: 1px solid #e1e1e1;
+.sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
 }
