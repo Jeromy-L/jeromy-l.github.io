@@ -24,7 +24,7 @@
     box-shadow:  0 -4px 8px 0 rgba(0, 0, 0, 0.1);
     
 }
-#footer >p > span{
+#footer p > span{
   cursor: pointer;
   left: 30%;
   top: 20px;
@@ -107,8 +107,8 @@
   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .img{
-  height: 500px;
-  
+  height: auto;
+  padding-bottom: 50px;
   padding-top: 30px;
 }
 .img-box .img p{

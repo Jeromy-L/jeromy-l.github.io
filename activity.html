@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/activity.css">
 
 </head>
-<body id="body" class="background">
+<body id="body">
   <nav class="navbar-a navbar-fixed-top" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);" >
     <div class="container-fluid">
       <div class="navbar-header" >
@@ -27,7 +27,7 @@
     </div>
     </div>
   </nav>
-<div class="box" >
+<div class="box">
     <div class="col-sm-3 col-md-2 sidebar ">
       <div id="logo">
           <img src="img/logo.png">
@@ -56,40 +56,40 @@
     </div>
     <div class=" col-md-10 col-sm-9 col-md-offset-2 col-sm-offset-3 tab-content">
       <div id="one" class="tab-pane fade">
-        <iframe src="iframe/a.htm"  class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;padding-right: 0;"></iframe>
+        <iframe src="iframe/a.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;height: 600px;padding-right: 0"></iframe>
       </div>
       <div id="two" class="tab-pane fade">
-        <iframe src="iframe/b.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;padding-right: 0"></iframe> 
+        <iframe src="iframe/b.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;height: 600px;padding-right: 0"></iframe> 
       </div>
       <div id="three" class="tab-pane fade">
-        <iframe src="iframe/c.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;padding-right: 0"></iframe>
+        <iframe src="iframe/c.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;height: 600px;padding-right: 0"></iframe>
       </div>
       <div id="four" class="tab-pane fade">
-        <iframe src="iframe/d.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;padding-right: 0"></iframe>
+        <iframe src="iframe/d.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;height: 600px;padding-right: 0"></iframe>
       </div>
       <div id="five" class="tab-pane fade">
-        <iframe src="iframe/e.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;padding-right: 0"></iframe>
+        <iframe src="iframe/e.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;height: 600px;padding-right: 0"></iframe>
       </div>
       <div id="six" class="tab-pane fade">
-        <iframe src="iframe/f.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;padding-right: 0"></iframe>
+        <iframe src="iframe/f.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;height: 600px;padding-right: 0"></iframe>
       </div>
       <div id="seven" class="tab-pane fade">
-        <iframe src="iframe/g.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;padding-right: 0"></iframe>
+        <iframe src="iframe/g.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;height: 600px;padding-right: 0"></iframe>
       </div>
       <div id="eight" class="tab-pane fade">
-        <iframe src="iframe/h.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;padding-right: 0"></iframe>
+        <iframe src="iframe/h.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;height: 600px;padding-right: 0"></iframe>
       </div>
       <div id="nine-1" class="tab-pane fade">
-        <iframe src="iframe/i-1.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;padding-right: 0"></iframe>
+        <iframe src="iframe/i-1.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;height: 600px;padding-right: 0"></iframe>
       </div>
       <div id="nine-2" class="tab-pane fade">
-        <iframe src="iframe/i-2.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;padding-right: 0"></iframe>
+        <iframe src="iframe/i-2.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;height: 600px;padding-right: 0"></iframe>
       </div>
       <div id="nine-3" class="tab-pane fade">
-        <iframe src="iframe/i-3.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;padding-right: 0"></iframe>
+        <iframe src="iframe/i-3.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;height: 600px;padding-right: 0"></iframe>
       </div>
       <div id="nine-4" class="tab-pane fade">
-        <iframe src="iframe/i-4.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;padding-right: 0"></iframe>
+        <iframe src="iframe/i-4.htm" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;height: 600px;padding-right: 0"></iframe>
       </div>
     </div>
   </div>
@@ -99,14 +99,6 @@
   
   <script type="text/javascript">
       $(document).ready(function(){
-        var ht = $(window).height();//获取浏览器窗口的整体高度；
-        var topHeader = $("nav").height();//获取头部高度，定义一个变量名为topHeader
-        $("iframe").css("height",ht-topHeader+"px");//计算右边高度：窗口高度-头部高度 
-        $(window).resize(function(){
-          var ht = $(window).height();//获取浏览器窗口的整体高度；
-          var topHeader = $("nav").height();//获取头部高度，定义一个变量名为topHeader
-          $("iframe").css("height",ht-topHeader+"px");//计算右边高度：窗口高度-头部高度 
-        })
         if($(window).width()<768){
           $(".sidebar").css("position","relative")
           $(".sidebar").css("top","0px")
